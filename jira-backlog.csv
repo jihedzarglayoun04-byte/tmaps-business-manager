@@ -1,0 +1,8 @@
+Issue Type,Summary,Description,Priority,Story Points
+Epic,Interface utilisateur,Création de l'interface publique,High,
+Story,Créer la page d'accueil,En tant que visiteur je veux découvrir la plateforme,High,3
+Story,Créer la navigation,En tant que visiteur je veux accéder aux sections,High,2
+Story,Présenter les fonctionnalités,En tant que visiteur je veux comprendre les fonctions proposées,High,3
+Story,Présenter le fonctionnement,En tant que visiteur je veux comprendre les étapes d'utilisation,Medium,2
+Story,Rendre la page responsive,En tant que visiteur mobile je veux utiliser la page sur téléphone,High,3
+Task,Tester la page,Tester les liens et l'affichage sur plusieurs tailles d'écran,Medium,
