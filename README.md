@@ -50,3 +50,4 @@ Après avoir configuré l'intégration GitHub for Jira (si disponible sur votre 
 | TMAP-5 | En tant que visiteur mobile, je veux consulter une page responsive | 3 |
 
 Les clés ci-dessus sont des exemples : elles doivent être remplacées par les vraies clés générées dans votre projet Jira.
+La page d'accueil présente les fonctionnalités principales de TMaps Business Manager.
