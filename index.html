@@ -165,6 +165,7 @@
                 </div>
 
                 <div class="features-grid">
+
                     <article class="feature-card">
                         <div class="feature-icon icon-blue">▦</div>
                         <span class="feature-number">01</span>
@@ -173,7 +174,9 @@
                             Ajoutez, consultez, modifiez et supprimez
                             les informations de vos établissements.
                         </p>
-                        <a href="#contact" class="feature-link">En savoir plus →</a>
+                        <a href="#feature-modal" class="feature-link" data-feature="gestion">
+                            En savoir plus →
+                        </a>
                     </article>
 
                     <article class="feature-card featured-card">
@@ -184,7 +187,9 @@
                             Visualisez la localisation de vos établissements
                             et découvrez leur répartition géographique.
                         </p>
-                        <a href="#contact" class="feature-link">En savoir plus →</a>
+                        <a href="#feature-modal" class="feature-link" data-feature="cartographie">
+                            En savoir plus →
+                        </a>
                     </article>
 
                     <article class="feature-card">
@@ -195,7 +200,9 @@
                             Retrouvez rapidement un établissement par son nom,
                             sa ville ou sa catégorie.
                         </p>
-                        <a href="#contact" class="feature-link">En savoir plus →</a>
+                        <a href="#feature-modal" class="feature-link" data-feature="recherche">
+                            En savoir plus →
+                        </a>
                     </article>
 
                     <article class="feature-card">
@@ -206,8 +213,11 @@
                             Consultez des indicateurs et des statistiques
                             pour mieux comprendre vos données.
                         </p>
-                        <a href="#contact" class="feature-link">En savoir plus →</a>
+                        <a href="#feature-modal" class="feature-link" data-feature="dashboard">
+                            En savoir plus →
+                        </a>
                     </article>
+
                 </div>
             </div>
         </section>
@@ -241,6 +251,46 @@
             <p>© <span id="currentYear"></span> TMaps. Tous droits réservés.</p>
         </div>
     </footer>
+
+    <!-- Fenêtre modale des fonctionnalités -->
+    <div class="feature-modal"
+         id="featureModal"
+         aria-hidden="true">
+
+        <div class="modal-overlay"></div>
+
+        <div class="modal-content"
+             role="dialog"
+             aria-modal="true"
+             aria-labelledby="modalTitle">
+
+            <button type="button"
+                    class="modal-close"
+                    id="modalClose"
+                    aria-label="Fermer">
+                ×
+            </button>
+
+            <span class="modal-category" id="modalCategory">
+                FONCTIONNALITÉ
+            </span>
+
+            <div class="modal-icon" id="modalIcon">▦</div>
+
+            <h2 id="modalTitle">Titre de la fonctionnalité</h2>
+
+            <p id="modalDescription">
+                Description de la fonctionnalité.
+            </p>
+
+            <button type="button"
+                    class="btn btn-primary modal-close-button"
+                    id="modalCloseButton">
+                Compris
+            </button>
+
+        </div>
+    </div>
 
 </body>
 </html>

@@ -46,7 +46,9 @@ button {
     margin: auto;
 }
 
-/* Navigation */
+/* =========================
+   NAVIGATION
+========================= */
 
 .header {
     position: sticky;
@@ -131,7 +133,9 @@ button {
     cursor: pointer;
 }
 
-/* Hero */
+/* =========================
+   HERO
+========================= */
 
 .hero {
     position: relative;
@@ -263,7 +267,9 @@ button {
     font-weight: 800;
 }
 
-/* Dashboard illustration */
+/* =========================
+   DASHBOARD ILLUSTRATION
+========================= */
 
 .hero-visual {
     position: relative;
@@ -511,7 +517,9 @@ button {
     font-size: 9px;
 }
 
-/* General sections */
+/* =========================
+   GENERAL SECTIONS
+========================= */
 
 .section {
     padding: 95px 0;
@@ -542,7 +550,9 @@ button {
     line-height: 1.9;
 }
 
-/* Features */
+/* =========================
+   FEATURES
+========================= */
 
 .features {
     background: var(--background);
@@ -628,7 +638,9 @@ button {
     font-weight: 800;
 }
 
-/* Call to action */
+/* =========================
+   CALL TO ACTION
+========================= */
 
 .cta-section {
     padding: 65px 0;
@@ -668,7 +680,9 @@ button {
     box-shadow: 0 8px 20px #182c6c44;
 }
 
-/* Footer */
+/* =========================
+   FOOTER
+========================= */
 
 .footer {
     padding: 25px 0;
@@ -696,7 +710,9 @@ button {
     font-size: 10px;
 }
 
-/* Decorative shapes */
+/* =========================
+   DECORATIVE SHAPES
+========================= */
 
 .hero-decoration {
     position: absolute;
@@ -719,7 +735,9 @@ button {
     left: -90px;
 }
 
-/* Responsive */
+/* =========================
+   RESPONSIVE
+========================= */
 
 @media (max-width: 1000px) {
     .hero-content {
@@ -894,5 +912,112 @@ button {
 
     .cta-content h2 {
         font-size: 28px;
+    }
+}
+
+/* =========================
+   TBM-8 - FEATURE MODAL
+========================= */
+
+.feature-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(16, 26, 53, 0.55);
+    backdrop-filter: blur(6px);
+}
+
+.feature-modal.active {
+    display: flex;
+}
+
+.modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(16, 26, 53, 0.55);
+}
+
+.modal-content {
+    position: relative;
+    z-index: 2;
+    width: min(100%, 480px);
+    padding: 35px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.2);
+    animation: modalAppear 0.25s ease;
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+    border: 0;
+    background: transparent;
+    color: var(--muted);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal-category {
+    display: block;
+    margin-bottom: 18px;
+    color: var(--primary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+.modal-icon {
+    width: 55px;
+    height: 55px;
+    display: grid;
+    place-items: center;
+    margin: 20px 0 15px;
+    border-radius: 13px;
+    background: #eaf0ff;
+    color: var(--primary);
+    font-size: 25px;
+}
+
+.modal-content h2 {
+    margin-bottom: 12px;
+    color: var(--dark);
+    font-family: 'Manrope', sans-serif;
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+.modal-content p {
+    margin-bottom: 25px;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.modal-close-button {
+    border: none;
+    cursor: pointer;
+}
+
+@keyframes modalAppear {
+    from {
+        opacity: 0;
+        transform: translateY(15px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        padding: 25px;
     }
 }
